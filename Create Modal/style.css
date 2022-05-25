@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(45deg, #4158d0 0%, #c850c0 50%, #ffcc70 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__open {
+  font-size: 20px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card__open:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card__inner {
+  width: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-animation: showModal linear 0.2s;
+          animation: showModal linear 0.2s;
+  position: relative;
+  margin: 200px auto;
+  -webkit-animation: modalShow 0.3s linear;
+          animation: modalShow 0.3s linear;
+}
+
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #e26e70;
+  color: #fff;
+  padding: 15px;
+  font-size: 17px;
+}
+
+.card__header i {
+  cursor: pointer;
+}
+
+.card__body {
+  padding: 15px;
+}
+
+.card__title {
+  font-size: 23px;
+  color: #e26e70;
+  margin-bottom: 10px;
+}
+
+.card__content {
+  margin-bottom: 30px;
+}
+
+.card__close {
+  text-align: right;
+}
+
+.card__btn {
+  padding: 10px 20px;
+  background-color: #e26e70;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@-webkit-keyframes modalShow {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes modalShow {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

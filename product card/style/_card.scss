@@ -1,0 +1,137 @@
+.card {
+  width: 320px;
+  height: 400px;
+  background-color: $black;
+  border-radius: 15px;
+  color: $white;
+  padding: 20px;
+
+  &__icon {
+    a {
+      color: $white;
+    }
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    padding-right: 29px;
+    transition: 0.5s;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    color: $green;
+    font-size: 25px;
+    transition: 0.5s;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 25px;
+    transition: 0.5s;
+  }
+
+  &__hover {
+    margin-top: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    h2 {
+      font-weight: unset;
+      margin-right: 15px;
+      font-size: 18px;
+    }
+  }
+
+  &__size {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    span {
+      color: #272d40;
+      margin: 0 5px;
+      border-radius: 5px;
+      padding: 2px 9px;
+      background-color: $white;
+    }
+  }
+
+  &__color {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    span {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+  }
+
+  &__color--green {
+    background-color: $green;
+  }
+
+  &__color--red {
+    background-color: $red;
+  }
+
+  &__color--black {
+    background-color: black;
+  }
+
+  &__btn {
+    padding: 10px 20px;
+    background-color: $green;
+    color: $white;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: 0.25s;
+  }
+
+  &__btn:hover {
+    transform: scale(0.9);
+    transition: 0.25s;
+  }
+}
+
+.card:hover {
+  .card {
+    &__img {
+      transform: translateY(-90px) rotate(-20deg);
+      transition: 0.5s;
+    }
+
+    &__title {
+      transform: translate(-37px, -70px);
+      transition: 0.5s;
+    }
+    &__price {
+      transform: translate(-115px, -70px);
+      transition: 0.5s;
+    }
+
+    &__hover {
+      margin-top: -45px;
+      visibility: visible;
+      opacity: 1;
+      transition: 0.5s;
+      transition-delay: 0.2s;
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
