@@ -1,0 +1,29 @@
+.card {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  &__img {
+    width: 22%;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: 0.3s;
+    }
+  }
+  &__img:hover {
+    img {
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
+  }
+}
